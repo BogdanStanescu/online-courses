@@ -1,0 +1,50 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #fbe4d4;
+}
+
+.app__title > h1 {
+  color: #adadad;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 31px;
+  font-weight: 500;
+  margin: 40px 0px 0px 40px;
+  cursor: pointer;
+}
+
+.app__sidebar {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0px 0px 40px;
+}
+
+.sidebar__option > .MuiSvgIcon-root {
+  color: #d6ac9f;
+  padding: 20px;
+}
+
+.sidebar__option:hover > .MuiSvgIcon-root {
+  color: #8a63de;
+  cursor: pointer;
+}
+
+.sidebar__option--active > .MuiSvgIcon-root {
+  color: #2e81f4;
+}
+
+@media only screen and (max-width: 600px) {
+  .app__title > h1 {
+    font-size: 28px;
+    margin: 5px 0px 0px 5px;
+  }
+
+  .app__sidebar {
+    margin: 5px 0px 0px 5px;
+  }
+
+  .app__title > h1 {
+    margin: 0px 280px 0px 20px;
+  }
+} 
